@@ -10,14 +10,24 @@ public class CreateCarPage extends BasePage {
 
     @FindBy(css = "[id^='custom_entity_type_LicensePlate']")
     public WebElement licensePlateElement;
+
     @FindBy(name = "custom_entity_type[Driver]")
     public WebElement driverElement;
+
     @FindBy(name = "custom_entity_type[Location]")
     public WebElement locationElement;
-    @FindBy(xpath = "//div[@class='btn-group pull-right open']/button[contains(text(),'Save and Close')]")
+
+    @FindBy(css = "[class='btn btn-success action-button']")
     public WebElement saveAndCloseButtonElement;
+
     @FindBy(css = "div[id*='FuelType']")
     public WebElement fuelTypeElement;
+
+    //if this locator doesn't work, use [id^='uniform-custom_entity_type_Logo_file'] > span[class='action']
+    @FindBy(name = "custom_entity_type[Logo][file]")
+    public WebElement logoElement;
+
+
     /**
      * This method stands for selecting tags
      * Provide tag name to select
@@ -42,6 +52,7 @@ public class CreateCarPage extends BasePage {
         }
         return checkBox;
     }
+
     /**
      * Select fuel type by visible text
      *
@@ -59,5 +70,15 @@ public class CreateCarPage extends BasePage {
         WebElement fuelTypeSelectionElement = Driver.get().findElement(By.xpath(locator));
         BrowserUtils.waitForClickablility(fuelTypeSelectionElement, 15);
         fuelTypeSelectionElement.click();
+    }
+
+    /**
+     * This method will upload a file
+     * File from your computer!
+     * @param pathToTheFile that you want to upload
+     */
+    public void uploadLogo(String pathToTheFile){
+        BrowserUtils.waitForVisibility(logoElement, 15);
+        logoElement.sendKeys(pathToTheFile);
     }
 }
