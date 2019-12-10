@@ -35,8 +35,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
-			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
 		<span class='report-name'>Vytrack Test Results</span>
@@ -45,7 +44,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 10, 2019 02:42:08 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 10, 2019 05:02:34 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -61,7 +60,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -104,10 +103,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='93.75%'><span class='strong'>15</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>1</span> others
                 </div>
             </div>
         </div>
@@ -125,17 +124,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to Dashboard</span>
-						<span class='test-time'>Dec 10, 2019 02:42:17 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Login as username</span>
+						<span class='test-time'>Dec 10, 2019 05:02:46 PM</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:42:17 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:42:25 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+751ms</span>
+	<span class='label start-time'>Dec 10, 2019 05:02:46 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:02:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+5ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -147,11 +146,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:42:25 PM</td>
+			<tr class='log' status='skip'>
+				<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+				<td class='timestamp'>5:02:46 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle 'Dashboard' is displayed
+						Test case was skipped : loginTest
 					
 				</td>
 			</tr>
@@ -162,15 +161,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Manage Dashboards</span>
-						<span class='test-time'>Dec 10, 2019 02:42:33 PM</span>
+						<span class='test-name'>Login as user1</span>
+						<span class='test-time'>Dec 10, 2019 05:02:54 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:42:33 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:42:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+114ms</span>
+	<span class='label start-time'>Dec 10, 2019 05:02:54 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:02:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+417ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -184,9 +183,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:42:41 PM</td>
+				<td class='timestamp'>5:02:58 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle 'All Manage Dashboards' is displayed
+						Login test passed for user user1
 					
 				</td>
 			</tr>
@@ -197,15 +196,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Cars</span>
-						<span class='test-time'>Dec 10, 2019 02:42:48 PM</span>
+						<span class='test-name'>Login as user2</span>
+						<span class='test-time'>Dec 10, 2019 05:03:06 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:42:48 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:42:57 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+920ms</span>
+	<span class='label start-time'>Dec 10, 2019 05:03:06 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:03:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+926ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -219,9 +218,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:42:57 PM</td>
+				<td class='timestamp'>5:03:11 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle 'All Cars' is displayed
+						Login test passed for user user2
 					
 				</td>
 			</tr>
@@ -232,15 +231,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Accounts</span>
-						<span class='test-time'>Dec 10, 2019 02:43:04 PM</span>
+						<span class='test-name'>Login as user3</span>
+						<span class='test-time'>Dec 10, 2019 05:03:20 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:43:04 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:43:12 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+725ms</span>
+	<span class='label start-time'>Dec 10, 2019 05:03:20 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:03:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+112ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -254,9 +253,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:43:12 PM</td>
+				<td class='timestamp'>5:03:25 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle 'All Accounts' is displayed
+						Login test passed for user user3
 					
 				</td>
 			</tr>
@@ -267,15 +266,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Calls</span>
-						<span class='test-time'>Dec 10, 2019 02:43:19 PM</span>
+						<span class='test-name'>Login as user4</span>
+						<span class='test-time'>Dec 10, 2019 05:03:34 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:43:19 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:43:27 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+518ms</span>
+	<span class='label start-time'>Dec 10, 2019 05:03:34 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:03:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+368ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -289,9 +288,9 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:43:27 PM</td>
+				<td class='timestamp'>5:03:38 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle 'All Calls' is displayed
+						Login test passed for user user4
 					
 				</td>
 			</tr>
@@ -300,17 +299,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Calendar Events</span>
-						<span class='test-time'>Dec 10, 2019 02:43:34 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Login as user5</span>
+						<span class='test-time'>Dec 10, 2019 05:03:48 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:43:34 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:43:38 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+488ms</span>
+	<span class='label start-time'>Dec 10, 2019 05:03:48 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:03:53 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+919ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -322,87 +321,30 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:43:38 PM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:03:53 PM</td>
 				<td class='step-details'>
-						smokeTest
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>2:43:38 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="title title-level-1">...</span> is not clickable at point (439, 56). Other element would receive the click: <div class="loader-mask shown">...</div>
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SABIR13', ip: '25.224.48.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\choci\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6cb0ec566edd2499b43bce8aa4444a01
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:90)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
+						Login test passed for user user5
 					
 				</td>
 			</tr>
 		</tbody>
 	</table>
 </div>
-						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\choci\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-10-14-43.png' src='C:\Users\choci\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-10-14-43.png' data-src='C:\Users\choci\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-10-14-43.png'></li>
-						</ul>
 					</div>
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to Open Opportunities</span>
-						<span class='test-time'>Dec 10, 2019 02:43:46 PM</span>
+						<span class='test-name'>Login as storemanager51</span>
+						<span class='test-time'>Dec 10, 2019 05:04:02 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 10, 2019 02:43:46 PM</span>
-	<span class='label end-time'>Dec 10, 2019 02:43:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+653ms</span>
+	<span class='label start-time'>Dec 10, 2019 05:04:02 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:04:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+705ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -416,9 +358,324 @@ Session ID: 6cb0ec566edd2499b43bce8aa4444a01
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>2:43:54 PM</td>
+				<td class='timestamp'>5:04:08 PM</td>
 				<td class='step-details'>
-						Verified that page subtitle 'Open Opportunities' is displayed
+						Login test passed for user storemanager51
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as storemanager52</span>
+						<span class='test-time'>Dec 10, 2019 05:04:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:04:16 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:04:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+95ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:04:22 PM</td>
+				<td class='step-details'>
+						Login test passed for user storemanager52
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as storemanager53</span>
+						<span class='test-time'>Dec 10, 2019 05:04:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:04:31 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:04:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+106ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:04:38 PM</td>
+				<td class='step-details'>
+						Login test passed for user storemanager53
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as storemanager54</span>
+						<span class='test-time'>Dec 10, 2019 05:04:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:04:47 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:04:53 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+684ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:04:53 PM</td>
+				<td class='step-details'>
+						Login test passed for user storemanager54
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as storemanager55</span>
+						<span class='test-time'>Dec 10, 2019 05:05:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:05:01 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:05:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+55ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:05:07 PM</td>
+				<td class='step-details'>
+						Login test passed for user storemanager55
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as salesmanager101</span>
+						<span class='test-time'>Dec 10, 2019 05:05:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:05:15 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:05:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+991ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:05:20 PM</td>
+				<td class='step-details'>
+						Login test passed for user salesmanager101
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as salesmanager102</span>
+						<span class='test-time'>Dec 10, 2019 05:05:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:05:28 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:05:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+643ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:05:32 PM</td>
+				<td class='step-details'>
+						Login test passed for user salesmanager102
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as salesmanager103</span>
+						<span class='test-time'>Dec 10, 2019 05:05:39 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:05:39 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:05:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+454ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:05:44 PM</td>
+				<td class='step-details'>
+						Login test passed for user salesmanager103
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as salesmanager104</span>
+						<span class='test-time'>Dec 10, 2019 05:05:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:05:51 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:05:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+673ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:05:55 PM</td>
+				<td class='step-details'>
+						Login test passed for user salesmanager104
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>Login as salesmanager105</span>
+						<span class='test-time'>Dec 10, 2019 05:06:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 10, 2019 05:06:02 PM</span>
+	<span class='label end-time'>Dec 10, 2019 05:06:05 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+375ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:06:05 PM</td>
+				<td class='step-details'>
+						Login test passed for user salesmanager105
 					
 				</td>
 			</tr>
@@ -447,108 +704,7 @@ Session ID: 6cb0ec566edd2499b43bce8aa4444a01
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Dec 10, 2019 02:43:34 PM</td>
-										<td class='linked' test-id='6'>Verify that page subtitle is equals to All Calendar Events</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="title title-level-1">...</span> is not clickable at point (439, 56). Other element would receive the click: <div class="loader-mask shown">...</div>
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SABIR13', ip: '25.224.48.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\choci\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51516}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6cb0ec566edd2499b43bce8aa4444a01
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:90)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -556,7 +712,7 @@ Session ID: 6cb0ec566edd2499b43bce8aa4444a01
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>16</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -568,19 +724,19 @@ Session ID: 6cb0ec566edd2499b43bce8aa4444a01
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 10, 2019 02:42:08 PM</div>
+					<div class='panel-lead'>Dec 10, 2019 05:02:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 10, 2019 02:43:55 PM</div>
+			 		<div class='panel-lead'>Dec 10, 2019 05:06:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 47s+396ms</div>
+					<div class='panel-lead'>0h 3m 31s+664ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -594,7 +750,7 @@ Session ID: 6cb0ec566edd2499b43bce8aa4444a01
 						</tr>
 							<tr>
 								<td>Environment</td>
-								<td>https://qa1.vytrack.com/</td>
+								<td>https://qa2.vytrack.com/</td>
 							</tr>
 							<tr>
 								<td>Browser</td>
@@ -615,13 +771,13 @@ Session ID: 6cb0ec566edd2499b43bce8aa4444a01
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 7,
-				passParent: 6,
-				failParent: 1,
+                parentCount: 16,
+				passParent: 15,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
+				skipParent: 1,
 				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
@@ -647,7 +803,7 @@ Session ID: 6cb0ec566edd2499b43bce8aa4444a01
 		</script>
 		<script>
 			var timeline = {
-			        "Verify that page subtitle is equals to Dashboard":8.751,"Verify that page subtitle is equals to All Manage Dashboards":8.114,"Verify that page subtitle is equals to All Cars":8.92,"Verify that page subtitle is equals to All Accounts":7.725,"Verify that page subtitle is equals to All Calls":7.518,"Verify that page subtitle is equals to All Calendar Events":3.488,"Verify that page subtitle is equals to Open Opportunities":8.653
+			        "Login as username":0.005,"Login as user1":4.417,"Login as user2":4.926,"Login as user3":5.112,"Login as user4":4.368,"Login as user5":5.919,"Login as storemanager51":5.705,"Login as storemanager52":6.095,"Login as storemanager53":7.106,"Login as storemanager54":5.684,"Login as storemanager55":6.055,"Login as salesmanager101":4.991,"Login as salesmanager102":3.643,"Login as salesmanager103":4.454,"Login as salesmanager104":3.673,"Login as salesmanager105":3.375
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
