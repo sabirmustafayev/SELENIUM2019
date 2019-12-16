@@ -27,7 +27,8 @@ public abstract class TestBase {
     //    Defines a test. You can add logs, snapshots, assign author and categories to a test and its children.
     protected static ExtentTest extentTest;
 
-    //        <parameter name="test" value="regression"></parameter>
+
+    //         <parameter name="test" value="regression"></parameter>
     @BeforeTest
     @Parameters({"test", "env_url"})
     public void beforeTest(@Optional String test, @Optional String env_url) {

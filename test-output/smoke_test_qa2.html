@@ -35,8 +35,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
-			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
 		<span class='report-name'>Vytrack Test Results</span>
@@ -45,7 +44,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Dec 9, 2019 05:13:55 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Dec 12, 2019 05:36:06 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -61,7 +60,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -104,10 +102,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='71.429%'><span class='strong'>5</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>7</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='28.571%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -125,109 +123,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to Dashboard</span>
-						<span class='test-time'>Dec 9, 2019 05:14:02 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 05:14:02 PM</span>
-	<span class='label end-time'>Dec 9, 2019 05:14:06 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+848ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>5:14:06 PM</td>
-				<td class='step-details'>
-						smokeTest
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>5:14:06 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="title title-level-1">...</span> is not clickable at point (67, 56). Other element would receive the click: <div class="loader-mask shown">...</div>
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SABIR13', ip: '25.224.48.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\choci\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9c082eab229874fcca2047a60ee42f8d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:88)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\choci\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-14.png' src='C:\Users\choci\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-14.png' data-src='C:\Users\choci\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-14.png'></li>
-						</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Manage Dashboards</span>
-						<span class='test-time'>Dec 9, 2019 05:14:14 PM</span>
+						<span class='test-time'>Dec 12, 2019 05:36:13 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 05:14:14 PM</span>
-	<span class='label end-time'>Dec 9, 2019 05:14:21 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+623ms</span>
+	<span class='label start-time'>Dec 12, 2019 05:36:13 PM</span>
+	<span class='label end-time'>Dec 12, 2019 05:36:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 6s+672ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -241,7 +147,42 @@ Session ID: 9c082eab229874fcca2047a60ee42f8d
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>5:14:21 PM</td>
+				<td class='timestamp'>5:36:19 PM</td>
+				<td class='step-details'>
+						Verified that page subtitle 'Dashboard' is displayed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify that page subtitle is equals to All Manage Dashboards</span>
+						<span class='test-time'>Dec 12, 2019 05:36:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 12, 2019 05:36:27 PM</span>
+	<span class='label end-time'>Dec 12, 2019 05:36:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+266ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:36:34 PM</td>
 				<td class='step-details'>
 						Verified that page subtitle 'All Manage Dashboards' is displayed
 					
@@ -255,14 +196,14 @@ Session ID: 9c082eab229874fcca2047a60ee42f8d
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Cars</span>
-						<span class='test-time'>Dec 9, 2019 05:14:29 PM</span>
+						<span class='test-time'>Dec 12, 2019 05:36:42 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 05:14:29 PM</span>
-	<span class='label end-time'>Dec 9, 2019 05:14:37 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+143ms</span>
+	<span class='label start-time'>Dec 12, 2019 05:36:42 PM</span>
+	<span class='label end-time'>Dec 12, 2019 05:36:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+852ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -276,7 +217,7 @@ Session ID: 9c082eab229874fcca2047a60ee42f8d
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>5:14:37 PM</td>
+				<td class='timestamp'>5:36:51 PM</td>
 				<td class='step-details'>
 						Verified that page subtitle 'All Cars' is displayed
 					
@@ -287,109 +228,17 @@ Session ID: 9c082eab229874fcca2047a60ee42f8d
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='11'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Accounts</span>
-						<span class='test-time'>Dec 9, 2019 05:14:44 PM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 05:14:44 PM</span>
-	<span class='label end-time'>Dec 9, 2019 05:14:48 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+472ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>5:14:48 PM</td>
-				<td class='step-details'>
-						smokeTest
-					
-				</td>
-			</tr>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>5:14:48 PM</td>
-				<td class='step-details'>
-						<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="title title-level-1">...</span> is not clickable at point (255, 56). Other element would receive the click: <div class="loader-mask shown">...</div>
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SABIR13', ip: '25.224.48.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\choci\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:88)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\choci\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-14.png' src='C:\Users\choci\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-14.png' data-src='C:\Users\choci\IdeaProjects\Summer2019OnlineTestNGSeleniumProject/test-output/Screenshots/smokeTest-2019-12-09-17-14.png'></li>
-						</ul>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify that page subtitle is equals to All Calls</span>
-						<span class='test-time'>Dec 9, 2019 05:14:55 PM</span>
+						<span class='test-time'>Dec 12, 2019 05:36:58 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 05:14:55 PM</span>
-	<span class='label end-time'>Dec 9, 2019 05:15:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+561ms</span>
+	<span class='label start-time'>Dec 12, 2019 05:36:58 PM</span>
+	<span class='label end-time'>Dec 12, 2019 05:37:05 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+372ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -403,7 +252,42 @@ Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>5:15:03 PM</td>
+				<td class='timestamp'>5:37:05 PM</td>
+				<td class='step-details'>
+						Verified that page subtitle 'All Accounts' is displayed
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>Verify that page subtitle is equals to All Calls</span>
+						<span class='test-time'>Dec 12, 2019 05:37:12 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Dec 12, 2019 05:37:12 PM</span>
+	<span class='label end-time'>Dec 12, 2019 05:37:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>5:37:19 PM</td>
 				<td class='step-details'>
 						Verified that page subtitle 'All Calls' is displayed
 					
@@ -417,14 +301,14 @@ Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to All Calendar Events</span>
-						<span class='test-time'>Dec 9, 2019 05:15:10 PM</span>
+						<span class='test-time'>Dec 12, 2019 05:37:26 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 05:15:10 PM</span>
-	<span class='label end-time'>Dec 9, 2019 05:15:18 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+606ms</span>
+	<span class='label start-time'>Dec 12, 2019 05:37:26 PM</span>
+	<span class='label end-time'>Dec 12, 2019 05:37:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 9s+228ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -438,7 +322,7 @@ Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>5:15:18 PM</td>
+				<td class='timestamp'>5:37:35 PM</td>
 				<td class='step-details'>
 						Verified that page subtitle 'All Calendar Events' is displayed
 					
@@ -452,14 +336,14 @@ Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify that page subtitle is equals to Open Opportunities</span>
-						<span class='test-time'>Dec 9, 2019 05:15:25 PM</span>
+						<span class='test-time'>Dec 12, 2019 05:37:43 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Dec 9, 2019 05:15:25 PM</span>
-	<span class='label end-time'>Dec 9, 2019 05:15:34 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+600ms</span>
+	<span class='label start-time'>Dec 12, 2019 05:37:43 PM</span>
+	<span class='label end-time'>Dec 12, 2019 05:37:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+527ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -473,7 +357,7 @@ Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>5:15:34 PM</td>
+				<td class='timestamp'>5:37:50 PM</td>
 				<td class='step-details'>
 						Verified that page subtitle 'Open Opportunities' is displayed
 					
@@ -504,161 +388,7 @@ Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Dec 9, 2019 05:14:02 PM</td>
-										<td class='linked' test-id='8'>Verify that page subtitle is equals to Dashboard</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="title title-level-1">...</span> is not clickable at point (67, 56). Other element would receive the click: <div class="loader-mask shown">...</div>
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SABIR13', ip: '25.224.48.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\choci\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9c082eab229874fcca2047a60ee42f8d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:88)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Dec 9, 2019 05:14:44 PM</td>
-										<td class='linked' test-id='11'>Verify that page subtitle is equals to All Accounts</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="title title-level-1">...</span> is not clickable at point (255, 56). Other element would receive the click: <div class="loader-mask shown">...</div>
-  (Session info: chrome=78.0.3904.108)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SABIR13', ip: '25.224.48.72', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.105 (60e2d8774a81..., userDataDir: C:\Users\choci\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57950}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pages.BasePage.navigateTo(BasePage.java:88)
-	at tests.vytrack.SmokeTest.smokeTest(SmokeTest.java:19)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -678,19 +408,19 @@ Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 9, 2019 05:13:55 PM</div>
+					<div class='panel-lead'>Dec 12, 2019 05:36:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 9, 2019 05:15:34 PM</div>
+			 		<div class='panel-lead'>Dec 12, 2019 05:37:51 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 39s+42ms</div>
+					<div class='panel-lead'>0h 1m 44s+908ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -726,13 +456,13 @@ Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
 		<script>
 			var statusGroup = {
                 parentCount: 7,
-				passParent: 5,
-				failParent: 2,
+				passParent: 7,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 0,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -757,7 +487,7 @@ Session ID: 2f206861cfc95a9f77c54f0e38efbcdc
 		</script>
 		<script>
 			var timeline = {
-			        "Verify that page subtitle is equals to Dashboard":3.848,"Verify that page subtitle is equals to All Manage Dashboards":7.623,"Verify that page subtitle is equals to All Cars":8.143,"Verify that page subtitle is equals to All Accounts":3.472,"Verify that page subtitle is equals to All Calls":7.561,"Verify that page subtitle is equals to All Calendar Events":7.606,"Verify that page subtitle is equals to Open Opportunities":8.6
+			        "Verify that page subtitle is equals to Dashboard":6.672,"Verify that page subtitle is equals to All Manage Dashboards":7.266,"Verify that page subtitle is equals to All Cars":8.852,"Verify that page subtitle is equals to All Accounts":7.372,"Verify that page subtitle is equals to All Calls":7.001,"Verify that page subtitle is equals to All Calendar Events":9.228,"Verify that page subtitle is equals to Open Opportunities":7.527
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
